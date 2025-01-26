@@ -29,15 +29,25 @@ For Software:
 - CSS
 -  html
 - flask
+- python
 - VS code
 - GitHub
 ### Implementation
 For Software:
 # Installation
-[commands]
+$ git clone https://github.com/your-repo/voyego.git
+# Clone the repository
+$ git clone https://github.com/your-repo/voyego.git
 
+# Navigate to the project directory
+$ cd voyego
+
+# Install dependencies
+$ npm install  # For frontend
+$ pip install -r requirements.txt  # For backend
 # Run
-[commands]
+# Run the backend server
+$ python app.py
 
 ### Project Documentation
 For Software:
