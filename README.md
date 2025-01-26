@@ -11,7 +11,7 @@
 -  3: Soumya R - TocH institution of science and technology
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+https://vercel.com/new/riarejis-projects/success?developer-id=&external-id=&redirect-url=&branch=main&deploymentUrl=code-verse-tinkher-hack-2sg1-3xk7hp27d-riarejis-projects.vercel.app&projectName=code-verse-tinkher-hack-2sg1&s=https%3A%2F%2Fgithub.com%2FRiareji%2FCodeVerse-tinkher-hack&gitOrgLimit=&hasTrialAvailable=1&totalProjects=1
 
 ### Project Description
 Our platform VOYEGO,connects travelers with similar vibes and interests to plan trips together or find reliable travel agencies—making travel more affordable and exciting.
