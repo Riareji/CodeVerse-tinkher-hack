@@ -29,11 +29,8 @@ For Software:
 - CSS
 -  html
 - flask
-  [Tools used]
 - VS code
 - GitHub
-For Hardware:
-- N/A
 ### Implementation
 For Software:
 # Installation
