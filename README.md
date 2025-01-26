@@ -26,16 +26,14 @@ We’re your ultimate travel buddy matchmaking service! Whether you’re an adve
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
+- CSS
+-  html
+- flask
+  [Tools used]
+- VS code
+- GitHub
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
+- N/A
 ### Implementation
 For Software:
 # Installation
@@ -92,9 +90,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Aysha Sulthana : Designed the frontend interface for sigin page and search result page.contributed backend of login page using flask
+- Ria Reji       :Designed the frontend interface for user profile and login page.Managed GitHub
+- Soumya R       :Designed the frontend interface for home page.contributed backend of sign up and searching page using flask
 
 ---
 Made with ❤️ at TinkerHub
