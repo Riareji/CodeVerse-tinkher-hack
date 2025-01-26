@@ -52,7 +52,8 @@ $ python app.py
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots 
+
 *login and sign up page
 
 ![image](https://github.com/user-attachments/assets/2e348407-26fd-4f20-9d64-610ddb2bfa76)
