@@ -53,18 +53,29 @@ $ python app.py
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1]
 *login and sign up page
 
-![Screenshot2]
+![image](https://github.com/user-attachments/assets/2e348407-26fd-4f20-9d64-610ddb2bfa76)
+
 home page
 
-![Screenshot3]
+![image](https://github.com/user-attachments/assets/676001ab-77bd-4aee-9050-5bcd7f5cccfb)
+
+sign up page for new registers
+
+![sign up](https://github.com/user-attachments/assets/2a3419db-6618-4a3f-8dab-913d1e0c532e)
+
+
 user profile
 
+![userprofile](https://github.com/user-attachments/assets/c67d3b0e-5434-4c2d-9e98-ed9ba305e013)
+
+
+
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+workflow of signin/login pages
+![image](https://github.com/user-attachments/assets/598613e4-6a8f-436b-bd7e-22f3a1c332cd)
+
 
 For Hardware:
 
