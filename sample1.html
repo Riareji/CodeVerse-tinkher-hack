@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Vibe</title>
+    <style>
+        /* Add your existing styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="logout-btn" aria-label="Logout"></button>
+            <div class="search-container">
+                <button class="menu-btn" aria-label="Menu">☰</button>
+                <input type="text" class="search-bar" placeholder="Search destinations..." aria-label="Search destinations">
+                <div class="search-icon" aria-label="Search icon"></div>
+            </div>
+            <button class="notification-btn" aria-label="Notifications">🔔</button>
+            <button class="profile-btn" aria-label="User profile">👤</button>
+        </header>
+
+        <div class="profiles" id="profiles">
+            <!-- Profiles will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <script>
+        // Fetch and render profiles dynamically
+        async function loadProfiles() {
+            const response = await fetch('/api/agencies');
+            const agencies = await response.json();
+
+            const profilesContainer = document.getElementById('profiles');
+            profilesContainer.innerHTML = ''; // Clear existing content
+
+            agencies.forEach(agency => {
+                const card = document.createElement('div');
+                card.className = 'profile-card';
+
+                const images = agency.images.map(img => `<img src="${img}" alt="${agency.name} Image">`).join('');
+
+                card.innerHTML = `
+                    <div class="profile-icon">${agency.icon}</div>
+                    <h3>${agency.name}</h3>
+                    <p>${agency.description}</p>
+                    <div class="profile-images">
+                        ${images}
+                    </div>
+                `;
+
+                profilesContainer.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadProfiles);
+    </script>
+</body>
+</html>
