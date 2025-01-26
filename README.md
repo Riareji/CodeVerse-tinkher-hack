@@ -1,4 +1,4 @@
-# [Project Name] 🎯
+# CodeVerse 🎯
 
 
 ## Basic Details
@@ -6,21 +6,22 @@
 
 
 ### Team Members
-- Member 1: [Name] - [Colle]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+-  1: Aysha Sulthana - TocH institution of science and technology
+-  2: Ria Reji - TocH institution of science and technology
+-  3: Soumya R - TocH institution of science and technology
 
 ### Hosted Project Link
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+Our platform VOYEGO,connects travelers with similar vibes and interests to plan trips together or find reliable travel agencies—making travel more affordable and exciting.
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+Traveling alone is kinda off right? Finding like-minded travel buddies is harder than booking tickets!
+connecting people of same vibe thus creating more memorable trip which will be 1000 times better than traveling alone
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+We’re your ultimate travel buddy matchmaking service! Whether you’re an adventure junkie or a laid-back explorer, we match you with travelers heading to the same destination—or agencies that don’t cost a fortune. Connect, chat, and vibe before the journey begins!
 
 ## Technical Details
 ### Technologies/Components Used
