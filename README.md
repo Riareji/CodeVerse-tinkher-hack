@@ -89,13 +89,20 @@ workflow of signin/login pages
 ![ria (1)](https://github.com/user-attachments/assets/b3d03c47-7d65-4416-aea6-e2d00fb16774)
 ![aysha](https://github.com/user-attachments/assets/bfa7cce3-d947-46dc-83f9-cd2a29e6bb9f)
 
-!FINAL
+FINAL 
+
 ![image](https://github.com/user-attachments/assets/bfda0c9f-9bec-46b3-8933-a346257ff593)
  
-*Explain the final build*
+our platform's aim is to find people when we search places and additionaly tour packages 
+that are listed by us is also shown
+
 
 ### Project Demo
 # Video
+
+https://github.com/user-attachments/assets/079e427f-4c01-4507-96fd-40df6cdb1f39
+
+
 [Add your demo video link here]
 *Explain what the video demonstrates*
 
