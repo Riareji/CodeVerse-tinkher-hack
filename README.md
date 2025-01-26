@@ -77,15 +77,6 @@ workflow of signin/login pages
 ![image](https://github.com/user-attachments/assets/598613e4-6a8f-436b-bd7e-22f3a1c332cd)
 
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
 # Build Photos
 ![Team](Add photo of your team here)
 
@@ -94,9 +85,13 @@ For Hardware:
 *List out all components shown*
 
 ![Build](Add photos of build process here)
-*Explain the build steps*
+![soumya](https://github.com/user-attachments/assets/538959f2-fd53-4ed7-a300-a87fe4666788)
+![ria (1)](https://github.com/user-attachments/assets/b3d03c47-7d65-4416-aea6-e2d00fb16774)
+![aysha](https://github.com/user-attachments/assets/bfa7cce3-d947-46dc-83f9-cd2a29e6bb9f)
 
-![Final](Add photo of final product here)
+!FINAL
+![image](https://github.com/user-attachments/assets/bfda0c9f-9bec-46b3-8933-a346257ff593)
+ 
 *Explain the final build*
 
 ### Project Demo
