@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Vibe</title>
+    <style>
+        /* Existing CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffdf7; /* Off-white background color */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 0;
+            position: absolute;
+            top: 10px;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            margin: 0 20px;
+            position: relative;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .profiles {
+            display: grid;
+            grid-template-columns: 1fr; /* One profile per row */
+            gap: 20px;
+            margin-top: 120px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .profile-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fffdf5;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            max-width: 90%;
+        }
+        .profile-card h3 {
+            margin: 10px 0;
+            color: #333;
+            text-align: left;
+            margin-left: 60px;
+        }
+        .profile-card p {
+            margin: 10px 0;
+            color: #666;
+            font-size: 14px;
+            text-align: justify;
+        }
+        /* Position the profile icon at the top right */
+        .profile-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: #4facfe;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="search-container">
+                <input type="text" class="search-bar" id="destinationSearch" placeholder="Search destinations..." aria-label="Search destinations">
+            </div>
+        </header>
+
+        <div class="profiles" id="profileResults">
+            <!-- Dynamic results will be inserted here -->
+        </div>
+    </div>
+
+    <script>
+        // Mock data for travellers and travel agencies
+        const data = {
+            agencies: [
+                { name: "EasyTrip", description: "Affordable trips to your dream destinations." },
+                { name: "GlobeTrotters", description: "Luxury trips made simple and fun." },
+            ],
+            travellers: [
+                { name: "John Doe", location: "London", languages: "English, French" },
+                { name: "Anna Smith", location: "Paris", languages: "French, German" },
+                { name: "Raj Patel", location: "Mumbai", languages: "Hindi, English" },
+            ],
+        };
+
+        // Fuzzy search function
+        function fuzzySearch(query, items, keys) {
+            const lowerQuery = query.toLowerCase();
+            return items.filter(item =>
+                keys.some(key => item[key].toLowerCase().includes(lowerQuery))
+            );
+        }
+
+        // Function to display search results
+        function searchResults(destination) {
+            const resultsContainer = document.getElementById('profileResults');
+            resultsContainer.innerHTML = ''; // Clear previous results
+
+            // Perform fuzzy search
+            const matchedAgencies = fuzzySearch(destination, data.agencies, ['name', 'description']);
+            const matchedTravellers = fuzzySearch(destination, data.travellers, ['name', 'location', 'languages']);
+
+            // Display matched agencies
+            if (matchedAgencies.length > 0) {
+                const agencyHeader = document.createElement('h2');
+                agencyHeader.textContent = 'Travel Agencies';
+                resultsContainer.appendChild(agencyHeader);
+
+                matchedAgencies.forEach(agency => {
+                    const agencyCard = document.createElement('div');
+                    agencyCard.className = 'profile-card';
+                    agencyCard.innerHTML = `
+                        <div class="profile-icon">A</div>
+                        <h3>${agency.name}</h3>
+                        <p>${agency.description}</p>
+                    `;
+                    resultsContainer.appendChild(agencyCard);
+                });
+            }
+
+            // Display matched travellers
+            if (matchedTravellers.length > 0) {
+                const travellerHeader = document.createElement('h2');
+                travellerHeader.textContent = 'Travellers';
+                resultsContainer.appendChild(travellerHeader);
+
+                matchedTravellers.forEach(traveller => {
+                    const travellerCard = document.createElement('div');
+                    travellerCard.className = 'profile-card';
+                    travellerCard.innerHTML = `
+                        <div class="profile-icon">${traveller.name[0]}</div>
+                        <h3>${traveller.name}</h3>
+                        <p>Location: ${traveller.location}</p>
+                        <p>Languages: ${traveller.languages}</p>
+                    `;
+                    resultsContainer.appendChild(travellerCard);
+                });
+            }
+
+            if (matchedAgencies.length === 0 && matchedTravellers.length === 0) {
+                resultsContainer.innerHTML = '<p>No matching results found.</p>';
+            }
+        }
+
+        // Trigger search when the user types in the search input
+        document.getElementById('destinationSearch').addEventListener('input', function () {
+            const query = document.getElementById('destinationSearch').value.trim();
+            if (query) {
+                searchResults(query); // Call search when the query has content
+            }
+        });
+    </script>
+</body>
+</html>

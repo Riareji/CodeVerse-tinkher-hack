@@ -1,0 +1,73 @@
+body {
+    /* Background Image from local file */
+    background-image: url('images/background.jpg'); /* Path to local background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Fallback background color */
+}
+
+.main-container {
+    text-align: center;
+}
+
+.voyago-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Krona One', sans-serif;
+    color: #411d15; /* Brown color */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjusted opacity */
+    border: 2px dashed #6c757d;
+    border-radius: 10px;
+    padding: 40px 80px; /* More padding horizontally, less vertically */
+    max-width: 800px; /* Increased width for a rectangle shape */
+    position: relative;
+    width: 100%; /* Ensures responsiveness */
+    display: inline-block; /* Keeps the rectangle centered */
+}
+
+
+
+.account-icon {
+    font-size: 60px;
+    color: #6c757d;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid #6c757d;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.account-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* To make sure the icon is round */
+}
+
+.btn {
+    margin-top: 15px;
+}
+
+.not-registered {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.not-registered:hover {
+    text-decoration: underline;
+}
